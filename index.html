@@ -8,7 +8,51 @@
   <title>Programming Language Suggester</title>
 </head>
 <body>
-  
+  <div class="panel-body">
+    <form>
+      <label for="interest">What excites or interests you about coding?</label>
+      <select class="form-control" id="interest">
+        <option value="1">I love being able to create something from nothing.</option>
+        <option value="2">I'm a problem solving pro.</option>
+        <option value="3">I have a passion for strategy games.</option>
+      </select>
+      <label for="important">Which one is more important for you?</label>
+      <select class="form-control" id="important">
+        <option value="1">How things work</option>
+        <option value="2">How things look to the user</option>
+        <option value="3">both</option>
+      </select>
+      <label for="company">What kind of company do you see yourself working for?</label>
+      <select class="form-control" id="company">
+        <option value="1">Established Businesses</option>
+        <option value="2">Startup or Small Businesses</option>
+        <option value="3">Unsure</option>
+      </select>
+      <div class="radio">
+        <label for="musical">
+          <input type="radio" value="1">Yes
+        </label>
+      <div class="radio">
+        <label for="musical">
+          <input type="radio" value="0">No
+        </label>
+      </div>
+      <label for="choise">What kind of company do you see yourself working for?</label>
+      <select class="form-control" id="choise">
+        <option value="1">Software developer</option>
+        <option value="2">Web developer</option>
+        <option value="3">Game developer</option>
+      </select>
+    </form>
+    <form id="personal">
+      <label for="name">Name:</label>
+      <input id="name" type="text">
+      <label for="email">Email:</label>
+      <input id="email" type="text">
+      <button type="submit" class="btn btn-success">Submit!</button>
+    </form>
+  </div>
+
   
 </body>
 </html>
