@@ -10,4 +10,14 @@ $(document).ready(function(){
     var emailInput = $("input#email").val();
   });
 
+  $(".name").text(nameInput);
+  $(".email").text(emailInput);
+
+  
+
+
+
+
+  
+
 });
