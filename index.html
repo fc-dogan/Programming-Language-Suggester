@@ -8,69 +8,74 @@
   <title>Programming Language Suggester</title>
 </head>
 <body>
-  <!--survey questions-->
-  <div class="panel-body">
-    <form>
-      <label for="interest">What excites or interests you about coding?</label>
-      <select class="form-control" id="interest">
-        <option value="1">I love being able to create something from nothing.</option>
-        <option value="2">I'm a problem solving pro.</option>
-        <option value="3">I have a passion for strategy games.</option>
-      </select>
-      <label for="important">Which one is more important for you?</label>
-      <select class="form-control" id="important">
-        <option value="1">How things work</option>
-        <option value="2">How things look to the user</option>
-        <option value="3">both</option>
-      </select>
-      <label for="company">What kind of company do you see yourself working for?</label>
-      <select class="form-control" id="company">
-        <option value="1">Established Businesses</option>
-        <option value="2">Startup or Small Businesses</option>
-        <option value="3">Unsure</option>
-      </select>
-      <label for="choise">What kind of company do you see yourself working for?</label>
-      <select class="form-control" id="choise">
-        <option value="1">Software developer</option>
-        <option value="2">Web developer</option>
-        <option value="3">Game developer</option>
-      </select>
-      <br>
-      <label for="musical">Do you have a musical mind?</label>
-      <div class="radio">
-        <label for="musical">
-          <input type="radio" value="1" checked>Yes
-        </label>
-      <div class="radio">
-        <label for="musical">
-          <input type="radio" value="0">No
-        </label>
-      </div>
-    </form>
-    <form id="personal">
-      <label for="name">Name:</label>
-      <input id="name" type="text" class="form-control">
-      <label for="email">Email:</label>
-      <input id="email" type="text" class="form-control">
-      <br>
-      <button type="submit" class="btn btn-success">Submit!</button>
-    </form>
-  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h1 class="jumbotron">Programming Language Suggester</h1>
+    </div>
+    <!--survey questions-->
+    <div class="panel-body">
+      <form>
+        <label for="interest">What excites or interests you about coding?</label>
+        <select class="form-control" id="interest">
+          <option value="1">I love being able to create something from nothing.</option>
+          <option value="2">I'm a problem solving pro.</option>
+          <option value="3">I have a passion for strategy games.</option>
+        </select>
+        <label for="important">Which one is more important for you?</label>
+        <select class="form-control" id="important">
+          <option value="1">How things work</option>
+          <option value="2">How things look to the user</option>
+          <option value="3">both</option>
+        </select>
+        <label for="company">What kind of company do you see yourself working for?</label>
+        <select class="form-control" id="company">
+          <option value="1">Established Businesses</option>
+          <option value="2">Startup or Small Businesses</option>
+          <option value="3">Unsure</option>
+        </select>
+        <label for="choise">What kind of company do you see yourself working for?</label>
+        <select class="form-control" id="choise">
+          <option value="1">Software developer</option>
+          <option value="2">Web developer</option>
+          <option value="3">Game developer</option>
+        </select>
+        <br>
+        <label for="musical">Do you have a musical mind?</label>
+        <div class="radio">
+          <label for="musical">
+            <input type="radio" value="1" checked>Yes
+          </label>
+        <div class="radio">
+          <label for="musical">
+            <input type="radio" value="0">No
+          </label>
+        </div>
+      </form>
+      <form id="personal">
+        <label for="name">Name:</label>
+        <input id="name" type="text" class="form-control">
+        <label for="email">Email:</label>
+        <input id="email" type="text" class="form-control">
+        <br>
+        <button type="submit" class="btn btn-success">Submit!</button>
+      </form>
+    </div>
+  </div>  
   <!--Language Suggestions-->
   <div id="output">
-    <div id="c">
+    <div id="c" class="well">
       <img id="c-logo" src="img/C_Sharp_logo.png" alt="C_Sharp_logo">
       <h1><span class="name"></span>, you might be a good fit for <strong>C#</strong>!</h1>
       <p>C# is a modern object-oriented programming language that was developed by Microsoft to rival Java, which was heavily used by business software developers at that time. It was designed for developing apps on the Microsoft platform and needs the .NET framework on Windows to work. You can use C# to develop almost anything but it’s particularly strong in case of Windows desktop applications and games development. </p>
       <p><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)">Learn more </a>about C#.</p>
     </div>
-    <div id="javascript">
+    <div id="javascript" class="well">
       <img id="js-logo" src="img/javaS.jfif" alt="JavaScript_logo">
       <h1><span class="name"></span>, you might be a good fit for <strong>JavaScript</strong></h1>
       <p>All software developers these days use JavaScript in some way or the other. Used along with HTML and CSS, it is essential for front-end web development that creates interactive web pages and displays content dynamically to users. Over 90% of the websites use this language and it is one of the friendliest programming languages for learners, to begin with. So, there will be no shortage of opportunities if you master JavaScript.</p>
       <p><a href="https://en.wikipedia.org/wiki/JavaScript">Learn more </a>about JavaScript.</p>
     </div>
-    <div id="python">
+    <div id="python" class="well">
       <img id="python-logo" src="img/Python_logo.png" alt="Python_logo">
       <h1><span class="name"></span>, you might be a good fit for <strong>Python</strong></h1>
       <p>Python is a general-purpose programming language that is becoming ever more popular for data science. Companies worldwide are using Python to harvest insights from their data and gain a competitive edge.</p>
