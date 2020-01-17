@@ -8,6 +8,7 @@
   <title>Programming Language Suggester</title>
 </head>
 <body>
+  <!--survey questions-->
   <div class="panel-body">
     <form>
       <label for="interest">What excites or interests you about coding?</label>
@@ -28,30 +29,49 @@
         <option value="2">Startup or Small Businesses</option>
         <option value="3">Unsure</option>
       </select>
-      <div class="radio">
-        <label for="musical">
-          <input type="radio" value="1">Yes
-        </label>
-      <div class="radio">
-        <label for="musical">
-          <input type="radio" value="0">No
-        </label>
-      </div>
       <label for="choise">What kind of company do you see yourself working for?</label>
       <select class="form-control" id="choise">
         <option value="1">Software developer</option>
         <option value="2">Web developer</option>
         <option value="3">Game developer</option>
       </select>
+      <br>
+      <label for="musical">Do you have a musical mind?</label>
+      <div class="radio">
+        <label for="musical">
+          <input type="radio" value="1" checked>Yes
+        </label>
+      <div class="radio">
+        <label for="musical">
+          <input type="radio" value="0">No
+        </label>
+      </div>
     </form>
     <form id="personal">
       <label for="name">Name:</label>
-      <input id="name" type="text">
+      <input id="name" type="text" class="form-control">
       <label for="email">Email:</label>
-      <input id="email" type="text">
+      <input id="email" type="text" class="form-control">
+      <br>
       <button type="submit" class="btn btn-success">Submit!</button>
     </form>
   </div>
+  <!--Language Suggestions-->
+  <div id="output">
+    <div id="c">
+      <h1><span class="name"></span>, you might be a good fit for <strong>C#</strong>!</h1>
+      <p>C# is a modern object-oriented programming language that was developed by Microsoft to rival Java, which was heavily used by business software developers at that time. It was designed for developing apps on the Microsoft platform and needs the .NET framework on Windows to work. You can use C# to develop almost anything but it’s particularly strong in case of Windows desktop applications and games development. </p>
+      <p><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)">Learn more </a>about C#.</p>
+    </div>
+    <div id="javascript">
+      <h1><span class="name"></span>, you might be a good fit for <strong>JavaScript</strong></h1>
+      <p></p>
+    </div>
+    <div id="python">
+      <h1><span class="name"></span>, you might be a good fit for <strong>Python</strong></h1>
+    </div>
+
+  </divid>
 
   
 </body>
