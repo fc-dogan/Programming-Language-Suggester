@@ -6,7 +6,7 @@
 
 ## Description
 
-Programming language suggester webpage asks future students a series of questions about themselves and provides a lannguage suggestion based on their answers.
+Programming language suggester webpage asks future students a series of questions about themselves and provides a language suggestion based on their answers.
 
 ## Setup
 
@@ -14,7 +14,14 @@ Programming language suggester webpage asks future students a series of question
 
 * Open a simple HTTP server in the top level of cloned directory. 
 
-* or open in [github page] https://github.com/fc-dogan/Programming-Language-Suggester.git
+* or open in github page https://github.com/fc-dogan/Programming-Language-Suggester
+
+For a mac, run the following command in your terminal:
+
+* $ git clone https://github.com/fc-dogan/Programming-Language-Suggester
+
+* Then open your web browser of choice
+
 
 ## Technologies Used 
 
