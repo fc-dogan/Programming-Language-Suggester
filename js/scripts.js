@@ -7,6 +7,13 @@ $(document).ready(function(){
     var forthQ = parseInt($("#choice").val());
     var fifthQ = $("input:radio[name=musical]:checked").val();
 
+    var nameInput = $("input#name").val();
+    var emailInput = $("input#email").val();
+ 
+      
+    $(".p-name").text(nameInput);
+    $(".p-email").text(emailInput);
+
     if (fifthQ === "no"){
       $("#c").show();
     } else {
