@@ -14,6 +14,10 @@ $(document).ready(function(){
     $(".p-name").text(nameInput);
     $(".p-email").text(emailInput);
 
+    $("#output button").click(function(){
+      location.reload()
+    });
+
     if (fifthQ === "yes"){
       if (firstQ + forthQ > 2 && secondQ === "2" ||
       firstQ + forthQ > 2 && thirdQ === "2") {
@@ -23,9 +27,12 @@ $(document).ready(function(){
       firstQ + forthQ <= 2 && thirdQ === "1"){
         $("#python").show();
         $("#blanks").hide();
+      } else {
+        $("#c").show();
+        $("#blanks").hide();
       }
     } else {
-      $("#c").show();
+      $("#c").slideDown();
       $("#blanks").hide();
     }
 
