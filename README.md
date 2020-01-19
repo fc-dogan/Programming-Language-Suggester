@@ -14,7 +14,7 @@ Programming language suggester webpage asks future students a series of question
 
 * Open a simple HTTP server in the top level of cloned directory. 
 
-* or open in github page [here](https://github.com/fc-dogan/Programming-Language-Suggester)
+* or open in github page [here](https://fc-dogan.github.io/Programming-Language-Suggester/.)
 
 For a mac, run the following command in your terminal:
 
