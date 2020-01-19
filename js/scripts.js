@@ -14,11 +14,22 @@ $(document).ready(function(){
     $(".p-name").text(nameInput);
     $(".p-email").text(emailInput);
 
-    if (fifthQ === "no"){
-      $("#c").show();
+    if (fifthQ === "yes"){
+      if (firstQ + forthQ > 2 && secondQ === "2" ||
+      firstQ + forthQ > 2 && thirdQ === "2") {
+        $("#javascript").show();
+        $("#blanks").hide();
+      } else if (firstQ + forthQ <= 2 && secondQ === "1" ||
+      firstQ + forthQ <= 2 && thirdQ === "1"){
+        $("#python").show();
+        $("#blanks").hide();
+      }
     } else {
-      $("#javascript").show();
+      $("#c").show();
+      $("#blanks").hide();
     }
+
+     
 
   });
 });
